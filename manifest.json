@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Preenchedor Automático SICAD",
+  "version": "1.0",
+  "description": "Preenche Nota e Classificação no SICAD a partir de dados colados.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
